@@ -10,7 +10,7 @@ function AnalyticsDashboard() {
   const logsPerPage = 10;
 
   useEffect(() => {
-    fetch("https://snippet-manager-analytics-production.up.railway.app/logs")
+    fetch("https://snippet-manager-analytics-a0adad83c031.herokuapp.com/logs")
       .then((res) => res.json())
       .then((data) => {
         setLogs(data);
